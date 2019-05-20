@@ -58,4 +58,12 @@ public class AppTest
     public void testMakeVerbalListNull(){
         assertEquals("", App.makeVerbalList(null));
     }
+
+    public void testOxfordList1() {
+        assertEquals("apple", App.makeVerbalListOxford(Arrays.asList("apple")));        
+    }
+
+    public void testOxfordList2() {
+        assertEquals("apple and pie", App.makeVerbalListOxford(Arrays.asList("apple", "pie")));
+    }
 }

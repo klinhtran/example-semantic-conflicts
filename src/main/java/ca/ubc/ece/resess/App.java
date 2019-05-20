@@ -18,4 +18,10 @@ public class App
             return "";
         return String.join(", ", items);
     }
+
+    public static String makeVerbalListOxford(List<String> items){
+        if(items == null)
+            return "";
+        return String.join(" and ", items);
+    }
 }
