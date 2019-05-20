@@ -1,6 +1,7 @@
 package ca.ubc.ece.resess;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * Hello world!
@@ -30,5 +31,13 @@ public class App
 
     public static String makeVerbalListPlus(List<String> items){   
         return String.join (" + ", items);
+    }
+
+    public static Integer getAvg(List<Integer> nums){   
+        int sum = 0; 
+        for (Integer n : nums) {
+            sum += n;
+        }
+        return sum / nums.size();
     }
 }

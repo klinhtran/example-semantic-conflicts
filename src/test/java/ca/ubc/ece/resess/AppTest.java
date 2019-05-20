@@ -87,4 +87,12 @@ public class AppTest
             assertTrue(true);
         }
     }
+
+    public void testGetAvgOne(){
+        Integer n = 3;
+        assertEquals(n, App.getAvg(Arrays.asList(n)));
+    }
+    public void testGetAvgTwo(){
+        assertEquals(new Integer(3), App.getAvg(Arrays.asList(2, 4)));
+    }
 }
