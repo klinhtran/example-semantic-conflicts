@@ -100,4 +100,9 @@ public class AppTest
             assertTrue(true);
         }
     }
+
+    public void testColorYellow() {   
+        assertEquals("Yellow", App.whatIsYourFavouriteColour());
+        
+    }
 }
