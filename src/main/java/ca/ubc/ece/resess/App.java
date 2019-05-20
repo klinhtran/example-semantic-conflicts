@@ -24,6 +24,7 @@ public class App
             return "";
         if(items.size() == 1)
             return items.get(0);
+            
         return String.join (" and ", String.join(", ", items.subList(0, items.size()-1)), items.get(items.size()-1));
     }
 }
