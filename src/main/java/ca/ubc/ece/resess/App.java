@@ -50,4 +50,8 @@ public class App
     public static String whatIsYourFavouriteColour() {
         return "Blue";
     }
+
+    public static Integer getLifeMeaning() {
+        return 42;
+    }
 }
