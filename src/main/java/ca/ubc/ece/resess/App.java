@@ -40,6 +40,7 @@ public class App
         int sum = 0; 
         if(nums.size() == 0)
             return 0;
+            
         for (Integer n : nums) {
             sum += n;
         }
