@@ -80,12 +80,7 @@ public class AppTest
     }
 
     public void testPlusNull(){
-        try {
-            App.makeVerbalListPlus(null);
-            assertTrue(false);
-        } catch (Exception e) {
-            assertTrue(true);
-        }
+        assertEquals("", App.makeVerbalListPlus(null));
     }
 
     public void testGetAvgOne(){
@@ -94,5 +89,13 @@ public class AppTest
     }
     public void testGetAvgTwo(){
         assertEquals(new Integer(3), App.getAvg(Arrays.asList(2, 4)));
+    }
+    public void testGetAvgWhenZero(){
+        try {
+            App.getAvg(null);
+            assertTrue(false);
+        } catch (Exception e) {
+            assertTrue(true);
+        }
     }
 }
