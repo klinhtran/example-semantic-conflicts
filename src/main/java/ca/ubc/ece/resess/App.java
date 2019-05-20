@@ -52,6 +52,6 @@ public class App
     }
 
     public static Integer getLifeMeaning() {
-        return 42;
+        return 43;
     }
 }
