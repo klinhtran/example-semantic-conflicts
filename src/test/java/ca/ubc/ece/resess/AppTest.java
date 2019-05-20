@@ -52,6 +52,6 @@ public class AppTest
     }
 
     public void testMakeVerbalListThreeItems(){
-        assertEquals("apple, pie", App.makeVerbalList(Arrays.asList("apple", "pie", "ice")));
+        assertEquals("apple, pie, ice", App.makeVerbalList(Arrays.asList("apple", "pie", "ice")));
     }
 }
