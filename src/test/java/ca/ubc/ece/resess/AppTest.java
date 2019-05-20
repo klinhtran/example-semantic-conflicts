@@ -70,4 +70,12 @@ public class AppTest
     public void testOxfordList3() {
         assertEquals("apple, pie and dog", App.makeVerbalListOxford(Arrays.asList("apple", "pie", "dog")));
     }
+
+    public void testPlus1(){
+        assertEquals("a", App.makeVerbalListPlus(Arrays.asList("a")));
+    }
+
+    public void testPlus2(){
+        assertEquals("a + b", App.makeVerbalListPlus(Arrays.asList("a", "b")));
+    }
 }

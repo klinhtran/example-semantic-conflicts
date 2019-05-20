@@ -27,4 +27,8 @@ public class App
             
         return String.join (" and ", String.join(", ", items.subList(0, items.size()-1)), items.get(items.size()-1));
     }
+
+    public static String makeVerbalListPlus(List<String> items){   
+        return String.join (" + ", items);
+    }
 }
