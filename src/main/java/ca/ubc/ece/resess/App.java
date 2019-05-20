@@ -29,8 +29,11 @@ public class App
         return String.join (" and ", String.join(", ", items.subList(0, items.size()-1)), items.get(items.size()-1));
     }
 
-    public static String makeVerbalListPlus(List<String> items){   
+    public static String makeVerbalListPlus(List<String> items){
+        if(items==null)
+            return "";   
         return String.join (" + ", items);
+        
     }
 
     public static Integer getAvg(List<Integer> nums){   
