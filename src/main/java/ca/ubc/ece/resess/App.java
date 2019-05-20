@@ -46,4 +46,8 @@ public class App
         }
         return sum / nums.size();
     }
+
+    public static String whatIsYourFavouriteColour() {
+        return System.currentTimeMillis() % 5 > 0 ? "Blue" : "Yellow";
+    }
 }
