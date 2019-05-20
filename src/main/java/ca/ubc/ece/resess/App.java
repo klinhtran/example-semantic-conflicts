@@ -48,6 +48,6 @@ public class App
     }
 
     public static String whatIsYourFavouriteColour() {
-        return System.currentTimeMillis() > 1558391714000L ? "Blue" : "Yellow";
+        return "Blue";
     }
 }

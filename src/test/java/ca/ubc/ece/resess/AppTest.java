@@ -101,9 +101,7 @@ public class AppTest
         }
     }
 
-    public void testColorYellow() {   
-        assertEquals("Yellow", App.whatIsYourFavouriteColour());
-        
-        
+    public void testColorBlue() {   
+        assertEquals("Blue", App.whatIsYourFavouriteColour());
     }
 }
