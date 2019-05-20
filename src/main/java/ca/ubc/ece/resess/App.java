@@ -22,6 +22,8 @@ public class App
     public static String makeVerbalListOxford(List<String> items){
         if(items == null)
             return "";
-        return String.join(" and ", items);
+        if(items.size() == 1)
+            return items.get(0);
+        return String.join (" and ", String.join(", ", items.subList(0, items.size()-1)), items.get(items.size()-1));
     }
 }
