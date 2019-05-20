@@ -78,4 +78,13 @@ public class AppTest
     public void testPlus2(){
         assertEquals("a + b", App.makeVerbalListPlus(Arrays.asList("a", "b")));
     }
+
+    public void testPlusNull(){
+        try {
+            App.makeVerbalListPlus(null);
+            assertTrue(false);
+        } catch (Exception e) {
+            assertTrue(true);
+        }
+    }
 }
