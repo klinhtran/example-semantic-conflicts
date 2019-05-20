@@ -14,6 +14,8 @@ public class App
     }
 
     public static String makeVerbalList(List<String> items){
+        if(items == null)
+            return "";
         return String.join(", ", items);
     }
 }
