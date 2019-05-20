@@ -104,4 +104,8 @@ public class AppTest
     public void testColorBlue() {   
         assertEquals("Blue", App.whatIsYourFavouriteColour());
     }
+
+    public void testMeaning42(){
+        assertSame(42, App.getLifeMeaning());
+    }
 }
