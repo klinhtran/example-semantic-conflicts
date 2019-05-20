@@ -54,4 +54,13 @@ public class AppTest
     public void testMakeVerbalListThreeItems(){
         assertEquals("apple, pie, ice", App.makeVerbalList(Arrays.asList("apple", "pie", "ice")));
     }
+
+    public void testMakeVerbalListThrowNull(){
+        try {
+            App.makeVerbalList(null);
+            assertTrue("Should have thrown NullPointerException", false);
+        } catch (Exception e) {
+            assertTrue("Exception should be Null POinter", e.getClass().equals(NullPointerException.class));
+        }
+    }
 }
