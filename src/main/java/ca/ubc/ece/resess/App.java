@@ -55,4 +55,9 @@ public class App
         return 42;
         
     }
+
+    public static String whatIsYourFavouriteDay() {
+        return System.currentTimeMillis() > 1559683642000L ? "Monday" : "Saturday";
+    }
+        
 }
