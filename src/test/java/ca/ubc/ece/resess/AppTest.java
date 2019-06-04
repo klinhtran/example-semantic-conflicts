@@ -108,4 +108,8 @@ public class AppTest
     public void testMeaning42(){
         assertSame(42, App.getLifeMeaning());
     }
+
+    public void testFavoriteDay(){
+        assertEquals("Saturday", App.whatIsYourFavouriteDay());
+    }
 }
